@@ -1,0 +1,46 @@
+body{
+font-family: Arial, sans-serif;
+background:#ffe6f2;
+color:#333;
+margin:0;
+text-align:center;
+}
+
+header{
+background:#ffb6d9;
+padding:30px;
+}
+
+h1{
+font-size:40px;
+}
+
+section{
+background:white;
+margin:20px auto;
+padding:20px;
+width:80%;
+border-radius:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+padding:5px;
+}
+
+img{
+width:250px;
+border-radius:15px;
+margin:10px;
+}
+
+footer{
+background:#ffb6d9;
+padding:15px;
+margin-top:20px;
+}
