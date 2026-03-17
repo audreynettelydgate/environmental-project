@@ -1,46 +1,89 @@
 body{
-font-family: Arial, sans-serif;
-background:#ffe6f2;
-color:#333;
-margin:0;
-text-align:center;
+  margin:0;
+  font-family: Arial;
+  background: linear-gradient(to bottom, #ffe6f2, #ffd6ec);
 }
 
-header{
-background:#ffb6d9;
-padding:30px;
+/* NAV */
+.nav{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  padding:10px;
+  background:#ffb6d9;
 }
 
-h1{
-font-size:40px;
+.kitty-icon{
+  width:40px;
+  border-radius:50%;
 }
 
-section{
-background:white;
-margin:20px auto;
-padding:20px;
-width:80%;
-border-radius:20px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+/* HERO */
+.hero{
+  text-align:center;
+  padding:30px;
 }
 
-ul{
-list-style:none;
-padding:0;
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+  padding:20px;
 }
 
-li{
-padding:5px;
+/* CARDS */
+.card{
+  background:white;
+  padding:20px;
+  border-radius:25px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
 }
 
-img{
-width:250px;
-border-radius:15px;
-margin:10px;
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
 }
 
-footer{
-background:#ffb6d9;
-padding:15px;
-margin-top:20px;
+/* HELLO KITTY STYLE */
+.kitty-card{
+  border:3px solid #ffb6d9;
+  background:linear-gradient(to bottom, #fff, #ffe6f2);
+}
+
+/* IMAGES */
+.project-kitty{
+  width:100%;
+  border-radius:20px;
+}
+
+/* BUTTONS */
+button{
+  background:#ff69b4;
+  border:none;
+  padding:10px;
+  border-radius:15px;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#ff1493;
+}
+
+/* ✨ SPARKLES */
+.sparkles::before{
+  content:"✨ ✨ ✨ ✨ ✨ ✨ ✨";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+  animation: sparkle 3s linear infinite;
+}
+
+@keyframes sparkle{
+  0%{opacity:0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
 }
