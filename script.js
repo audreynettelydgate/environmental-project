@@ -1,16 +1,10 @@
-const quotes = [
-"Protecting the planet starts with small actions.",
-"The Earth is what we all have in common.",
-"Plastic pollution is not just an ocean problem — it's a human problem.",
-"Every piece of plastic ever made still exists somewhere.",
-"Change the world by changing your habits."
-];
+let plasticCount = 0;
 
-function newQuote(){
-let random = Math.floor(Math.random()*quotes.length);
-alert(quotes[random]);
+function increasePlastic(){
+  plasticCount++;
+  document.getElementById("counter").innerText = plasticCount;
 }
 
-window.onload = function(){
-setTimeout(newQuote,2000);
+function saveOcean(){
+  document.getElementById("saved").innerText = "🌊 You made a difference!";
 }
