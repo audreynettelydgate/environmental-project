@@ -1,84 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plastic Pollution Awareness</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Save The Ocean 🎀</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="pink-theme">
 
-<header>
-<h1>🌎 Plastic Pollution</h1>
-<p>Why Our Planet Needs Help</p>
+<!-- 🌸 NAV -->
+<nav class="nav">
+  <img class="kitty-icon" src="https://i.pinimg.com/1200x/fe/7f/22/fe7f226e87ca1efc3d5e95c9c1cc5f7c.jpg">
+  <a class="active" href="#">Home</a>
+</nav>
+
+<!-- ✨ SPARKLES -->
+<div class="sparkles"></div>
+
+<header class="hero">
+  <h1>🌎 Save The Ocean</h1>
+  <p>Plastic Pollution is Destroying Our Planet</p>
 </header>
 
-<section class="topic">
-<h2>My Topic</h2>
-<p>
-My chosen environmental science topic is plastic pollution and its impact on ecosystems and human health.
-</p>
-</section>
+<!-- 💖 GRID CARDS -->
+<main class="grid">
 
-<section class="why">
-<h2>Why I Chose This Topic</h2>
-<p>
-I chose plastic pollution because it is one of the most visible environmental issues affecting the planet today. 
-Every year millions of tons of plastic waste are produced, and much of it ends up in oceans, rivers, and ecosystems. 
-This topic interests me because plastic pollution affects wildlife, human health, and the overall environment. 
-Many animals mistake plastic for food or become trapped in plastic waste, which can cause serious injury or death. 
-Learning about this issue made me realize how my everyday actions can contribute to a global environmental problem, and why it is important for people to be more aware of their impact.
-</p>
-</section>
+  <!-- TOPIC -->
+  <article class="card kitty-card">
+    <h2>🎀 My Topic</h2>
+    <p>Plastic pollution and its impact on ecosystems and human health.</p>
+  </article>
 
-<section class="summary">
-<h2>What is Plastic Pollution?</h2>
+  <!-- WHY -->
+  <article class="card kitty-card">
+    <h2>💭 Why I Chose This</h2>
+    <p>
+      Plastic pollution is one of the most visible environmental issues today.
+      It harms animals, pollutes oceans, and affects human health.
+      I chose this topic because it shows how everyday actions can harm the planet.
+    </p>
+  </article>
 
-<p>
-Plastic pollution occurs when plastic waste appears in the environment faster than it can be properly broken down. 
-Because plastic is designed to be durable, it can take hundreds of years to decompose. During that time it often ends up in landfills, rivers, and oceans. 
-Single-use plastics such as water bottles and straws are some of the most common contributors to this problem. 
-When these items are thrown away, they can travel through waterways and reach the ocean, where they remain for decades.
-</p>
+  <!-- FACTS -->
+  <article class="card kitty-card">
+    <h2>📊 Facts</h2>
+    <ul>
+      <li>8 million tons of plastic enter oceans yearly</li>
+      <li>Plastic takes 400+ years to break down</li>
+      <li>100,000 marine animals die yearly</li>
+    </ul>
+  </article>
 
-<p>
-This issue is a major environmental concern because plastic pollution harms wildlife, damages ecosystems, and affects human health. 
-Marine animals such as turtles, birds, and fish often mistake plastic for food, which can lead to starvation or injury. 
-Plastic also breaks down into microplastics that contaminate water and food sources. 
-Scientists have found microplastics in oceans, soil, and even drinking water. Because of these widespread effects, plastic pollution is of the most urgent environmental challenges facing the world today.
-</p>
-</section>
+  <!-- COUNTER -->
+  <article class="card kitty-card">
+    <h2>🧮 Plastic Counter</h2>
+    <p id="counter">0</p>
+    <button onclick="increasePlastic()">Pollute 😢</button>
+  </article>
 
-<section class="facts">
-<h2>Facts You Should Know</h2>
-<ul>
-<li>Over 8 million tons of plastic enter the ocean every year.</li>
-<li>Plastic can take 400–1000 years to decompose.</li>
-<li>Over 100,000 marine animals die each year from plastic waste.</li>
-<li>Microplastics have been found in drinking water and seafood.</li>
-</ul>
-</section>
+  <!-- IMAGE -->
+  <article class="card kitty-card">
+    <img class="project-kitty" src="https://i.pinimg.com/736x/a5/52/92/a5529249f6b64c76c07bb2c2c4e6b53a.jpg">
+    <p>Animals are suffering because of plastic waste.</p>
+  </article>
 
-<section class="images">
-<h2>See the Impact</h2>
-<img src="images/turtle-plastic.jpg" alt="Turtle affected by plastic">
-<img src="images/ocean-plastic.jpg" alt="Plastic in ocean">
-</section>
+  <!-- SAVE BUTTON -->
+  <article class="card kitty-card">
+    <h2>🌊 Save The Ocean</h2>
+    <button onclick="saveOcean()">Click to Help 💖</button>
+    <p id="saved"></p>
+  </article>
 
-<section class="solution">
-<h2>What Can We Do?</h2>
-<ul>
-<li>Use reusable bottles and bags</li>
-<li>Avoid single-use plastics</li>
-<li>Recycle whenever possible</li>
-<li>Support environmental policies and clean-up efforts</li>
-</ul>
-</section>
-
-<footer>
-<p>Environmental Science Project | Created by Audreynette Lydgate</p>
-</footer>
+</main>
 
 <script src="script.js"></script>
 
