@@ -80,16 +80,18 @@ button:hover{
 .waves{
   position:fixed;
   bottom:0;
+  left:0;
   width:100%;
-  height:100px;
-  background: url("https://i.pinimg.com/736x/39/82/bf/3982bfe4f2cd35994ba3e470b2313b22.jpg");
-  animation: waveMove 5s linear infinite;
-  opacity:0.6;
+  height:120px;
+  background: url("https://svgshare.com/i/uYy.svg");
+  background-size: cover;
+  animation: waveMove 6s linear infinite;
+  z-index:0;
 }
 
 @keyframes waveMove{
   from{background-position-x:0;}
-  to{background-position-x:500px;}
+  to{background-position-x:1000px;}
 }
 
 .bows::before{
@@ -140,3 +142,44 @@ h1{
 h2{
   font-weight:600;
 }
+.grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:20px;
+  padding:20px;
+}
+@media (max-width: 900px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+footer{
+  background:#ffb6d9;
+  padding:20px;
+  text-align:center;
+  font-weight:600;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+}
+.bows, .waves{
+  pointer-events:none;
+}
+.card{
+  position:relative;
+  z-index:1;
+}
+.kitty-card{
+  border:3px solid #ffb6d9;
+  background: linear-gradient(to bottom, #fff, #ffe6f2);
+  position:relative;
+}
+
+/* cute corner bow */
+.kitty-card::after{
+  content:"🎀";
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-size:18px;
+}
+
