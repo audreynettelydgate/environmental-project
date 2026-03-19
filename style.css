@@ -126,3 +126,17 @@ button:hover{
 .after{
   clip-path: inset(0 50% 0 0);
 }
+body{
+  margin:0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f2, #ffd6ec);
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+}
+
+h2{
+  font-weight:600;
+}
