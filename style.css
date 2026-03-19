@@ -87,3 +87,53 @@ button:hover{
   50%{opacity:1;}
   100%{opacity:0;}
 }
+
+.waves{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:100px;
+  background: url("https://i.pinimg.com/1200x/08/ae/b9/08aeb9d02f977843833927e9de30b566.jpg");
+  animation: waveMove 5s linear infinite;
+  opacity:0.6;
+}
+
+@keyframes waveMove{
+  from{background-position-x:0;}
+  to{background-position-x:500px;}
+}
+
+.bows::before{
+  content:"🎀 🎀 🎀 🎀 🎀 🎀";
+  position:fixed;
+  top:0;
+  width:100%;
+  text-align:center;
+  animation: floatBows 6s linear infinite;
+}
+
+@keyframes floatBows{
+  0%{transform:translateY(-20px);}
+  50%{transform:translateY(20px);}
+  100%{transform:translateY(-20px);}
+}
+
+
+.slider-container{
+  position:relative;
+  width:100%;
+  height:200px;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.slider-container img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.after{
+  clip-path: inset(0 50% 0 0);
+}
