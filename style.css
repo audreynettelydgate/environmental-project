@@ -71,17 +71,6 @@ button:hover{
   background:#ff1493;
 }
 
-/* ✨ SPARKLES */
-.sparkles::before{
-  content:"✨ ✨ ✨ ✨ ✨ ✨ ✨";
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  text-align:center;
-  animation: sparkle 3s linear infinite;
-}
-
 @keyframes sparkle{
   0%{opacity:0;}
   50%{opacity:1;}
@@ -93,7 +82,7 @@ button:hover{
   bottom:0;
   width:100%;
   height:100px;
-  background: url("https://i.pinimg.com/1200x/08/ae/b9/08aeb9d02f977843833927e9de30b566.jpg");
+  background: url("https://i.pinimg.com/1200x/bd/e2/4d/bde24d092c6e00c6aabc466bbb7e6e4d.jpg");
   animation: waveMove 5s linear infinite;
   opacity:0.6;
 }
