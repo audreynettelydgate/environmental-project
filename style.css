@@ -144,23 +144,22 @@ h2{
 }
 .grid{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
+  justify-content: center;  /* THIS CENTERS THE GRID */
   gap:20px;
   padding:20px;
 }
-@media (max-width: 900px){
-  .grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 footer{
   background:#ffb6d9;
   padding:20px;
   text-align:center;
   font-weight:600;
-  border-top-left-radius:20px;
-  border-top-right-radius:20px;
+  border-radius:20px;
+  width:fit-content;
+  margin:40px auto; /* THIS centers the whole footer box */
 }
+
 .bows, .waves{
   pointer-events:none;
 }
